@@ -80,6 +80,10 @@ a  {
 	color: #fff;
 }
 
+a:hover,
+button:hover {
+    cursor: pointer;
+}
 .container {
     width: 100%;
     max-width: 1062px;
@@ -130,18 +134,28 @@ section {
 
 header {
     position: absolute;
-    top: 0;
     width: 100%;
+    top: 8px;
 }
 
 .menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    padding-left: 0;
 }
 
 .menu li {
     list-style: none;
+}
+.menu-header li:nth-of-type(1) {
+    margin-right: 85px;
+}
+.menu-header li:nth-last-of-type(1) {
+    margin-left: 85px;
+}
+.menu-header .logo {
+    margin: 0 100px;
 }
 
 .menu a {
@@ -158,7 +172,9 @@ header {
 }
 
 .main {
+    position: relative;
     height: 744px;
+    padding: 0;
     background: url('assets/images/main_bg.png') center / cover no-repeat;
 }
 
@@ -186,9 +202,30 @@ header {
 .text-white {
     color: #fff;
 }
+.description {
+    margin: 20px auto 30px;
+}
+
+.main > div {
+    margin-top: -30px;
+}
 
 .text-left {
     text-align: left;
+}
+.social {
+    position: absolute;
+    bottom: 90px;
+    left: calc(50% - 85px);
+}
+.social li {
+    margin-right: 30px;
+}
+.social li:nth-last-of-type(1) {
+    margin-right: 0;
+}
+.content-col {
+    max-width: 407px;
 }
 
 .subscribe {
